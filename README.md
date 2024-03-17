@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Matching Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The `PlayGame` component is a React component designed for a matching game application. This component handles the gameplay mechanics, card shuffling, user interactions, and progression tracking.
 
-## Available Scripts
+## Github Link :- [https://github.com/Asharma070320/Matching_Game_Project](https://github.com/Asharma070320/Matching_Game_Project/tree/main)
+## Hosted Link :- https://matching-game-project.vercel.app/
 
-In the project directory, you can run:
+### ScreenShots :- 
+![Screenshot 2024-03-17 125002](https://github.com/Asharma070320/Matching_Game_Project/assets/127501344/8e9e3687-29ff-4418-bd30-b5bbc79a355b)
+![Screenshot 2024-03-17 125014](https://github.com/Asharma070320/Matching_Game_Project/assets/127501344/41eb1181-b7f2-4c15-97ff-f95b3e8a30d2)
+![Screenshot 2024-03-17 125025](https://github.com/Asharma070320/Matching_Game_Project/assets/127501344/e07fafd7-0066-43a6-8a2f-ae6f93b8cb2a)
+![Screenshot 2024-03-17 125035](https://github.com/Asharma070320/Matching_Game_Project/assets/127501344/ff3878af-3fbe-4f6e-a1bf-be1f82c7d73d)
+![Screenshot 2024-03-17 125042](https://github.com/Asharma070320/Matching_Game_Project/assets/127501344/6e903c34-5863-4955-835d-eb8bda78319a)
 
-### `npm start`
+# Key Points for PlayGame Component:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Import Statements**: The component imports necessary dependencies from React and React Router DOM, as well as the `Card` component and image assets.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **State Management**: State variables are used to track pink and blue cards, selected choices, filled progress, and remaining lives.
 
-### `npm test`
+3. **Card Data**: Hardcoded data arrays (`pCards` and `bCards`) hold information about card images, IDs, matching status, and types (pink or blue).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Shuffle Cards**: Functions `shufflePinkCards` and `shuffleBlueCards` shuffle the pink and blue card arrays respectively using the Fisher-Yates shuffle algorithm.
 
-### `npm run build`
+5. **User Interactions**: The `handleChoice` function manages user interactions by setting the selected card choices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Game Logic**: The `useEffect` hook is used to check for matches between chosen cards. If a match is found, cards are marked as matched and progress is updated. If no match is found, the number of remaining lives is decremented.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. **Overlay Notification**: An overlay notification is displayed when a match is found, showing the matched cards.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8. **Progress Bar**: A progress bar indicates the user's progression through the game.
 
-### `npm run eject`
+9. **Navigation**: Users can navigate back to the instructions page using the back button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+10. **Component Rendering**: The component renders the game interface including pink and blue card grids, progress bar, remaining lives, and back button.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+These key points summarize the main functionality and structure of the `PlayGame` component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependencies
+- `react`: React library for building user interfaces.
+- `react-router-dom`: React Router library for navigation within the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Functionality
+- **Card Matching**: Users can select two cards, one from the pink-themed set and another from the blue-themed set, to match them.
+- **Progress Tracking**: The progress bar indicates the user's progress towards completing the game.
+- **Life Counter**: Users have a limited number of chances (lives) to match the cards. The remaining chances are displayed.
+- **Overlay Notification**: When a match is found, an overlay notification displays the matched cards.
+- **Navigation**: Users can navigate back to the instructions page using the back button.
 
-## Learn More
+## Components
+- **Card**: Renders individual cards with their respective images and handles user interactions.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## State Management
+- **useState**: Manages state variables for pink cards, blue cards, selected choices, filled progress, and remaining lives.
+- **useRef**: Provides a reference to the overlay notification element for manipulation.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Effects
+- **useEffect**: Handles side effects such as shuffling cards, checking for matches, and updating game state.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
