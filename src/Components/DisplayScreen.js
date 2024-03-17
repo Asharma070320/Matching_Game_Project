@@ -26,6 +26,7 @@ const DisplayScreen = () => {
           alt="restart.png"
         />
       </div>
+      <h2 className='earned_Banana'>Earned Bananas 🍌</h2>
         </div>
     </div>
   )
