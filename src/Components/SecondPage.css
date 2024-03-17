@@ -1,0 +1,69 @@
+.secondPage_container{
+    width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+monkeyImg{
+    width: 30%;
+    height: 65%;
+    display: flex;
+    /* border: 2px solid black; */
+}
+.monkeyImg img{
+    width: 100%;
+    height: 100%;
+}
+.msg_Box{
+    width: 27%;
+    height: 25%;
+    position: absolute;
+    top: 2rem;
+    right: 18rem;
+    /* border: 2px solid red; */
+}
+.msg_Box img{
+    width: 100%;
+    height: 100%;
+}
+.love_bananas{
+    width: 80%;
+    text-align: center;
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 2.4rem;
+  color: rgb(17,174,198);
+  /* border: 2px solid black; */
+}
+
+.start_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+.start_btn img:active {
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.backBtn{
+    width: 7%;
+    height: 15%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* border: 2px solid red; */
+}
+.backBtn img{
+    width: 100%;
+    height: 100%;
+}
+.backBtn img:active {
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+  

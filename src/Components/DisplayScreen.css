@@ -1,0 +1,58 @@
+.display{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgba(0, 0, 0, 0.573);
+    /* border: 2px solid red; */
+}
+.monkeyBox{
+    width: 22%;
+    height: 64%;
+    background-color: rgb(255,245,209);
+    position: relative;
+    border-radius: 30px;
+    /* border: 2px solid cyan; */
+}
+
+ .logo{
+    width: 28vw;
+    top: -2.2rem;
+    left: -2.5rem;
+    position: absolute;
+   
+}
+
+
+.monkey_smile{
+    width: 100%;
+    height: 53%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5.2rem;
+    /* border: 2px solid black; */
+}
+.monkey_smile img{
+    width: 180px;
+    height: 170px;
+}
+
+.restartBtn{
+    width: 100%;
+    height: 20%;
+    /* margin-top: 5px; */
+    padding-left: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* border: 2px solid red; */
+}
+.restartBtn img{
+    width: 95%;
+    height: 100%;
+}
+.restartBtn img:active {
+  transform: translateY(5px);
+  transition: 200ms;
+}
+

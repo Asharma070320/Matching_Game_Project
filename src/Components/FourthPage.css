@@ -1,0 +1,102 @@
+.fourthPage_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+
+
+/* .instruction{
+    width: 100%;
+    height: 60%;
+} */
+
+.threeCards{
+    width: 100%;
+    height: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    list-style: none;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+.setCard{
+    width: 22%;
+    height: 100%;
+    background-color: rgb(255,255,255);
+    border-radius: 40px;
+    border: 2px solid white;
+}
+.img{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    position: relative;
+    /* border: 2px solid red; */
+}
+.img img{
+    width: 55%;
+    height: 100%;
+}
+.appleCard{
+    position: absolute;
+    left: 7rem;
+}
+
+.cardContent{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    /* margin-top: 10px; */
+    /* border: 1px solid black; */
+}
+
+.numberImg{
+    width: 17%;
+    height: 40%;
+    margin-top: 20px;
+}
+.number{
+    width: 100%;
+    height: 100%;
+}
+.context{
+    width: 75%;
+    text-align: center;
+    color: rgb(21,175,199);
+    /* border: 1px solid purple; */
+}
+.context h2{
+    color: rgb(166,201,48);
+}
+
+.setimg{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    position: relative;
+    /* border: 2px solid red; */
+}
+.setimg img{
+    width: 80%;
+}
+.context1{
+    width: 75%;
+    text-align: center;
+    margin-top: -10px;
+    color: rgb(21,175,199);
+}
+.context1 h2{
+    color: rgb(166,201,48);
+}
