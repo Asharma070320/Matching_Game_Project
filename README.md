@@ -3,7 +3,7 @@
 ## Overview
 The `PlayGame` component is a React component designed for a matching game application. This component handles the gameplay mechanics, card shuffling, user interactions, and progression tracking.
 
-## Github Link :- https://github.com/Asharma070320/Matching_Game_Project
+## Github Link :- [https://github.com/Asharma070320/Matching_Game_Project](https://github.com/Asharma070320/Matching_Game_Project/tree/main)
 ## Hosted Link :- https://matching-game-project.vercel.app/
 
 ### ScreenShots :- 
